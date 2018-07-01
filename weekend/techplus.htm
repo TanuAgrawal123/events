@@ -1,0 +1,267 @@
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+$("#b1").click(function(){
+if($(this).html()=="Know More")
+{$(this).html("hide");
+$("#t1 h4").show();
+$("#t1 h4").slideUp(2000).slideDown(2000);
+$("#j1").show();
+$("#j1").slideUp(2000).slideDown(2000);}
+else{
+$("#b1").html("Know More");
+$("#t1 h4").hide();
+$("#j1").hide();
+}
+});
+$("#b2").click(function(){
+if($(this).html()=="Know More")
+{$(this).html("hide");
+$("#t2 h4").show();
+$("#t2 h4").slideUp(2000).slideDown(2000);
+$("#j2").show();
+$("#j2").slideUp(2000).slideDown(2000);}
+else{
+$("#b2").html("Know More");
+$("#t2 h4").hide();
+$("#j2").hide();}
+});
+$("#b3").click(function(){
+if($(this).html()=="Know More")
+{$(this).html("hide");
+$("#t3 h4").show();
+$("#t3 h4").slideUp(2000).slideDown(2000);
+$("#j3").show();
+$("#j3").slideUp(2000).slideDown(2000);}
+else{
+$("#b3").html("Know More");
+$("#t3 h4").hide();
+$("#j3").hide();}
+});
+
+$("#b4").click(function(){
+if($(this).html()=="Know More")
+{$(this).html("hide");
+$("#t4 h4").show();
+$("#t4 h4").slideUp(2000).slideDown(2000);
+$("#j4").show();
+$("#j4").slideUp(2000).slideDown(2000);}
+else{
+$("#b4").html("Know More");
+$("#t4 h4").hide();
+$("#j4").hide();}
+});
+
+$("#b5").click(function(){
+if($(this).html()=="Know More")
+{$(this).html("hide");
+$("#t5 h4").show();
+$("#t5 h4").slideUp(2000).slideDown(2000);
+$("#j5").show();
+$("j5").slideUp(2000).slideDown(2000);}
+else{
+$("#b5").html("Know More");
+$("#t5 h4").hide();
+$("#j5").hide();}
+});
+});
+</script>
+<style>
+
+
+
+#header{
+height:200;
+}
+#logo{
+float:left;
+height:200px;}
+#thought{
+float:left;
+height:200px;
+width:982;
+text-align:center;
+background-color:grey;}
+#menu{
+	height:50;
+background-color:black;
+
+}
+ul
+{
+	list-style:none;
+	padding:0;
+	margin:0;
+	border-color:red;
+}
+ul li
+{
+	float:left;
+	margin-top:15px;
+	text-align:center;
+width:250px;
+padding:1px;
+position:relative;
+}
+#menu ul li a
+{
+	width:200px;
+	color:greenyellow;
+	text-decoration:none;
+	padding:1px;
+}
+#menu ul li a:hover
+{
+color:black;
+}
+#block{
+margin-left:520;
+width:300;
+height:50;
+align:center;
+border:1px solid white;
+}
+
+                                    
+
+
+#t1,#t2,#t3,#t4,#t5{
+box-shadow:4px 4px 4px 4px rgba(0,0,0,0.4);
+margin:40;
+padding:20;
+height:450;
+width:300;
+float:left;
+}
+#j1,#j2,#j3,#j4,#j5{
+background-color:lightgreen;
+height:25;
+width:100;
+margin-left:100;
+margin-top:5px;
+display:none;
+}
+
+
+
+#t1 h4,#t2 h4,#t2 h4,#t3 h4,#t4 h4,#t5 h4{
+display:none;
+}
+#b1,#b2,#b3,#b4,#b5{
+background-color:red;
+height:30px;
+width:120;
+margin-left:90;
+margin-top:5px;
+margin-bottom:5px;
+font-size:15;
+color:black;}
+</style>
+
+</head>
+<body>
+
+<script>
+var images=["hack2.png","hack1.png"];
+var i=0;
+function slides()
+{document.getElementById("slideimage").src=images[i];
+if(i<(images.length-1))
+i++;
+else
+i=0;
+}
+setInterval(slides,3000)
+</script><div id="header">
+
+<div id="logo"><img src="img6.png"></div>
+<div id="thought"><h1><font color="magenta">
+PERFORMANCE IS OUR BUSINESS
+<br>
+QUALITY OUR FOUNDATION</font></h1></div></div>
+<div id="menu">
+<ul>
+<li><a href="#">HOME</a></li>
+<li><a href="#">ABOUT US</a></li>:
+<li><a href="#">OUR SERVICES</a></li>
+<li><a href="#">CONTACT US</a></li>
+<li><a href="#">TRAINING</a></li>
+</ul>
+</div>
+<div id="register">
+<i><h2 align="center"><font color="purple">Have a sight,if you are ready for the damn Mind Bites</font></h2>
+<div id="block" align="center">
+
+<a href="register.php"><font size="6"><B>REGISTER NOW</B></font></A>
+</div></div>
+<div id="Summer">
+<i><b><marquee behaviour="scroll"direction="RIGHT" font-size="+3" onmouseover="stop()" onmouseout="start()" scrollamount="20"><font color="red" size="5">
+Registration open for summer training 2018</marquee></font></div>
+<div id="middle">
+<div id="aboutus">
+<h3 align="center"><font size="8" color="blue">
+Know About Us
+</font></h3>
+<p align="center"><font size="5px" color="brown">Vision is not enough it must be combine with venture
+We provide end to end solution to all <b>web services</b>
+We provide better access , better insight , better facilities</font></p><div>
+
+<div id="services">
+
+
+<div id="t1">
+<h2>
+WEB DEVELOPMENT...</H2>
+
+<button id="b1">Know More</button>
+<img src="img1.png">
+
+
+
+
+<h4>
+We love what we do and we do what </br>our clients love and work with great clients</br> all over the world to create thoughtful</br> and purposeful websites!!!</br></h4>
+<a href="#"><button id="j1">JOIN NOW</button></a>
+</div>
+<div id="t2">
+
+<h2>SMS SERVICES
+</H2><b><button id="b2">Know More</button></b>
+<img src="img2.png">
+<H4>
+Bulk SMS in India is highly growing </br>trend,almost all the bussinesses need to send
+</br> text messages...With our bulk SMS Software </br>we will manage all aspect of our your future</br> requirement from start to finish! 
+</H4>
+<a href="#"><button id="j2">JOIN NOW</button></a></div>
+
+
+<div id="t3">
+
+<h2>APPLICATION DEVELOPMENT
+</H2><b><button id="b3">Know More</button></b>
+<img src="img3.png">
+<h4>We provide services of teaching how to </br>develop desktop and mobile application </br>with free online course from top universities</br> and organizations.... </br>so join our course now!!</br>
+<a href="#"><button id="j3">JOIN NOW</button></a>
+</div>
+
+<div id="t4">
+
+<h2>DOMAIN AND WEB HOSTING
+</H2><b><button id="b4">Know More</button></b>
+<img src="img4.png">
+<h4>Host your Website without any hiccups!!!</br>
+keep your website running with solid</br> security 24/7 tech support.So join us now.....</br>
+<a href="#"><button id="j4">JOIN NOW</button></a>
+</div><div id="t5">
+<h2>DIGITAL MARKETING
+</H2><b><button id="b5">Know More</button></b>
+<img src="img5.png">
+<h4>
+Digital Marketing is not an art of selling</br> a product .It is an art og making People buy </br>the product you sell..</br>
+
+<a href="#"><button id="j5">JOIN NOW</button></a></div></div></div>
+<div id="slide"><img src="hack2.png" id="slideimage"></div>
+</body>
+</html>
